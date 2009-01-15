@@ -1,0 +1,170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: noise-generator 0.1b-exp\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-12-27 15:47+0100\n"
+"PO-Revision-Date: 2008-12-27 16:18+0100\n"
+"Last-Translator: Michał Prędotka <mpredotka@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/messages.h:15
+msgid "Poisson noise (also called shot noise) arises due to the counting of quantum events. Light is captured in packets (photons) that produces a counting statistic which is described by the poisson distribution."
+msgstr "Szum Poissona (zwany również szumem śrutowym) powstaje z powodu zliczania zdarzeń kwantowych. Światło jest zbierane w pakietach (fotonach), które po zliczeniu tworzą statystykę opisaną przez rozkład Poissona."
+
+#: ../src/messages.h:16
+msgid "Determines the number of photons required to increase the pixel value by one. The higher the value the less noisy the result and the longer the processing time."
+msgstr "Determinuje ilość fotonów potrzebnych do podniesienia wartości piksela o jeden. Im większa wartość, tym mniejszy szum i dłuższy czas przetwarzania obrazu."
+
+#: ../src/messages.h:17
+msgid "Approximates the Poisson distribution by the normal distribution for high values. This reduces processing speed significantly."
+msgstr "Przybliża rozkład Poissona do rozkładu normalnego dla wysokich wartości. Znacznie obniża prędkość przetwarzania obrazu."
+
+#: ../src/messages.h:18
+msgid "Gaussian noise is standard distributed noise which is independent from pixel value. Gaussian noise normally arises due to thermal fluctuations in sensors, amplifiers, etc."
+msgstr "Szum Gaussa to standardowo rozłożony szum, niezależny od wartości pikseli. Szum Gaussa powstaje z powodu wahań temperatury sensorów, wzmacniaczy itp."
+
+#: ../src/messages.h:19
+msgid "Determines the standard deviation of the normal distibution in pixel values. The larger the value the more noise is apparent."
+msgstr "Odchylenie standardowe rozkładu normalnego dla wartości pikseli. Im większa wartość, tym więcej szumu."
+
+#: ../src/messages.h:20
+msgid "Uniform noise has a box distribution and is independent from pixel value. Uniform noise may be produced by quantisation errors when digitizing."
+msgstr "Szum równomierny posiada rozproszenie, które jest niezależne od wartości pikseli. Szum równomierny może być wytworzony przez kwantyzację błędów podczas konwersji analogowo-cyfrowej."
+
+#: ../src/messages.h:21
+msgid "The width of the box distribution. The larger the value the more noise is apparent."
+msgstr "Szerokość prostokąta rozproszenia. Im większa wartość, tym więcej szumu."
+
+#: ../src/messages.h:22
+msgid "The calculated standard deviation of the uniform distribution."
+msgstr "Odchylenie standardowe rozkładu równomiernego."
+
+#: ../src/messages.h:23
+msgid "Laplace noise is distributed by the Laplace distribution, which is also called the double exponential distribution."
+msgstr "Szum Laplace'a jest rozmieszczony zgodnie z rozkładem Laplace'a, zwanym także rozkładem podwójnie wykładniczym."
+
+#: ../src/messages.h:24
+msgid "Determines the scale parameter of the Laplace distribution. The higher the value the more noise."
+msgstr "Określa parametr skali rozkładu Laplace'a. Im większa wartość, tym więcej szumu."
+
+#: ../src/messages.h:25
+msgid "The calculated standard deviation of the laplace distribution."
+msgstr "Odchylenie standardowe rozkładu Laplace'a."
+
+#: ../src/messages.h:26
+msgid "The Lorentz distribution describes resonances and is a (so called) fat-tail distribution, because away from the resonance it goes to zero very slowly. It does not have either mean value nor standard deviation. Lorentz noise produces salt-and-pepper noise."
+msgstr "Rozkład Lorentza opisuje rezonans i należy do rozkładów z tzw. grubym ogonem. Nie posiada ani wartości średniej ani odchylenia standardowego. Szum Lorentza to szum szum typu \"sól i pieprz\"."
+
+#: ../src/messages.h:27
+msgid "Determines the scale parameter of the Lorentz distribution which is the half width half maximum (HWHM) of the distribution."
+msgstr "Określa parametr skali rozkładu Lorentza, który jest połówkową szerokością w połowie wysokości (HWHM) rozkładu."
+
+#: ../src/messages.h:28
+msgid "Adds noise to the luminance (YCbCr) channel only. This also reduces processing time."
+msgstr "Dodaje szum tylko do kanału luminancji (YCbCr), co skutkuje również skróceniem czasu przetwarzania obrazu."
+
+#: ../src/messages.h:29
+msgid "Converts from sRGB colour space to linear RGB before applying the noise, then back again. This is more physical and increases the noise in dark regions."
+msgstr "Przed zastosowaniem szumu konwertuje z przestrzeni barw sRGB do RGB liniowego, a następnie znów do sRGB. Powoduje to zwiększenie szumu w ciemnych obszarach obrazu."
+
+#: ../src/messages.h:30
+msgid "Resets to the default values."
+msgstr "Przywraca wartości domyślne."
+
+#. TRANSLATORS: %.2f must remain unchanged. Maximum length of entire
+#. string is 50 chars.
+#: ../src/events.c:85
+#: ../src/events.c:99
+#, c-format
+msgid "Standard deviation: %.2f"
+msgstr "Odchylenie standardowe: %.2f"
+
+#. TRANSLATORS: standard deviation (mathematical term)
+#: ../src/gauss_gui.c:22
+msgid "Stdev"
+msgstr ""
+"Odchylenie\n"
+"standardowe"
+
+#. prepeare the dialog
+#: ../src/interface.c:20
+#: ../src/interface.c:141
+msgid "Noise generator"
+msgstr "Generator szumu"
+
+#. TRANSLATORS: this is the surname of the French mathematician
+#. Simeon-Denis Poisson
+#: ../src/interface.c:44
+msgid "Poisson"
+msgstr "Poisson"
+
+#. TRANSLATORS: this is the surname of the German mathematician
+#. Carl-Friedrich Gauss
+#: ../src/interface.c:48
+msgid "Gauss"
+msgstr "Gauss"
+
+#. TRANSLATORS: Uniform as in uniform distribution.
+#: ../src/interface.c:51
+msgid "Uniform"
+msgstr "Równomierny"
+
+#. TRANSLATORS: this is the surname of the French mathematician
+#. Pierre-Simon Laplace
+#: ../src/interface.c:55
+msgid "Laplace"
+msgstr "Laplace"
+
+#. TRANSLATORS: this is the surname of the Dutch physicist Hendrik Lorentz
+#: ../src/interface.c:58
+msgid "Lorentz"
+msgstr "Lorentz"
+
+#: ../src/interface.c:83
+msgid "Luminance noise only"
+msgstr "Tylko szum luminancji"
+
+#. gamma toggle
+#: ../src/interface.c:100
+msgid "Gamma correction"
+msgstr "Korekcja Gammy"
+
+#. TRANSLATORS: this is the scale parameter of the Laplace distribution
+#: ../src/laplace_gui.c:32
+msgid "Scale"
+msgstr "Skala"
+
+#. TRANSLATORS: parameter of the Cauchy-Lorentz distribution
+#. (Greek letter)
+#: ../src/lorentz_gui.c:23
+msgid "Gamma"
+msgstr "Gamma"
+
+#: ../src/noise.c:116
+msgid "Generating noise..."
+msgstr "Generowanie szumu..."
+
+#: ../src/plugin.c:32
+msgid "Generates various types of noise."
+msgstr "Generuje różne rodzaje szumu."
+
+#: ../src/plugin.c:37
+msgid "_Noise generator..."
+msgstr "_Generator szumu..."
+
+#: ../src/poisson_gui.c:22
+msgid "Photons"
+msgstr "Fotony"
+
+#. approximation toggle
+#: ../src/poisson_gui.c:52
+msgid "Approximate"
+msgstr "Przybliżenie"
+
+#: ../src/uniform_gui.c:31
+msgid "Width"
+msgstr "Szerokość"
+

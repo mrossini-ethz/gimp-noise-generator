@@ -1,0 +1,236 @@
+# German translations for poisson-noise package.
+# Copyright (C) 2008 THE poisson-noise'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the poisson-noise package.
+#  <marco.rossini@gmx.net>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: noise-generator 0.1b-exp\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-12-27 15:47+0100\n"
+"PO-Revision-Date: 2008-12-26 00:22+0100\n"
+"Last-Translator:  <marco.rossini@gmx.net>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/messages.h:15
+msgid ""
+"Poisson noise (also called shot noise) arises due to the counting of quantum "
+"events. Light is captured in packets (photons) that produces a counting "
+"statistic which is described by the poisson distribution."
+msgstr ""
+"Poisson-Rauschen (auch Schrotrauschen genannt) entsteht durch das Zählen von "
+"Quanten-Ereignissen. Licht wird eingefangen in Paketen (Photonen), so dass "
+"eine Zähl-Statistik entsteht, die durch die Poisson-Verteilung beschrieben "
+"wird."
+
+#: ../src/messages.h:16
+msgid ""
+"Determines the number of photons required to increase the pixel value by "
+"one. The higher the value the less noisy the result and the longer the "
+"processing time."
+msgstr ""
+"Bestimmt die Anzahl Photonen die für die Erhöhung des Pixelwerts um Eins "
+"benötigt wird. Je grösser der Wert desto weniger verrauscht ist das Resultat "
+"und desto geringer ist die Verarbeitungszeit."
+
+#: ../src/messages.h:17
+msgid ""
+"Approximates the Poisson distribution by the normal distribution for high "
+"values. This reduces processing speed significantly."
+msgstr ""
+"Nähert die Poisson-Verteilung durch eine Normal-Verteilung an bei grossen "
+"Werten. Dies reduziert die Verarbeitungszeit signifikant."
+
+#: ../src/messages.h:18
+msgid ""
+"Gaussian noise is standard distributed noise which is independent from pixel "
+"value. Gaussian noise normally arises due to thermal fluctuations in "
+"sensors, amplifiers, etc."
+msgstr ""
+"Gauss'sches Rauschen ist standard-verteiltes Rauschen, welches unabhängig "
+"ist vom Pixel-Wert. Gauss'sches Rauschen ensteht normalerweise durch "
+"thermische Fluktuationen in Sensoren, Verstärkern etc."
+
+#: ../src/messages.h:19
+msgid ""
+"Determines the standard deviation of the normal distibution in pixel values. "
+"The larger the value the more noise is apparent."
+msgstr ""
+"Bestimmt die Standardabweichung der Normalverteilung in Pixel-Werten. Je "
+"grösser der Wert desto mehr Rauschen ist sichtbar."
+
+#: ../src/messages.h:20
+msgid ""
+"Uniform noise has a box distribution and is independent from pixel value. "
+"Uniform noise may be produced by quantisation errors when digitizing."
+msgstr ""
+"Gleichverteiltes Rauschen hat eine Rechteck-Verteilung und ist unabhängig "
+"vom Pixel-Wert. Gleichverteiltes Rauschen kann durch Quantisierungsfehler "
+"bei der analog-digital Konversion entstehen."
+
+#: ../src/messages.h:21
+msgid ""
+"The width of the box distribution. The larger the value the more noise is "
+"apparent."
+msgstr ""
+"Die Breite der Rechteck-Verteilung. Je grösser der Wert desto stärker das "
+"Rauschen."
+
+#: ../src/messages.h:22
+msgid "The calculated standard deviation of the uniform distribution."
+msgstr "Die berechnete Standardabweichung der Gleichverteilung."
+
+#: ../src/messages.h:23
+msgid ""
+"Laplace noise is distributed by the Laplace distribution, which is also "
+"called the double exponential distribution."
+msgstr ""
+"Laplace-Rauschen hat eine Laplace-Verteilung, welche auch mit "
+"Doppelexponentialverteilung bezeichnet wird."
+
+#: ../src/messages.h:24
+msgid ""
+"Determines the scale parameter of the Laplace distribution. The higher the "
+"value the more noise."
+msgstr ""
+"Bestimmt den Skalenparameter der Laplace-Verteilung. Je grösser der Wert "
+"desto mehr Rauschen ist sichtbar."
+
+#: ../src/messages.h:25
+msgid "The calculated standard deviation of the laplace distribution."
+msgstr "Die berechnete Standardabweichung der Laplace-Verteilung."
+
+#: ../src/messages.h:26
+msgid ""
+"The Lorentz distribution describes resonances and is a (so called) fat-tail "
+"distribution, because away from the resonance it goes to zero very slowly. "
+"It does not have either mean value nor standard deviation. Lorentz noise "
+"produces salt-and-pepper noise."
+msgstr ""
+"Die Lorentz-Verteilung beschreibt Resonanzen und geht sehr langsam gegen "
+"Null bei Entfernung von der Resonanz. Sie hat weder einen Mittelwert noch "
+"eine Standardabweichung. Lorentz-Rauschen erzeugt Salz-und-Pfeffer-Rauschen."
+
+#: ../src/messages.h:27
+msgid ""
+"Determines the scale parameter of the Lorentz distribution which is the half "
+"width half maximum (HWHM) of the distribution."
+msgstr ""
+"Bestimmt den Skalenparameter der Lorentz-Verteilung, welcher die halbe "
+"Halbwertsbreite der Verteilung ist."
+
+#: ../src/messages.h:28
+msgid ""
+"Adds noise to the luminance (YCbCr) channel only. This also reduces "
+"processing time."
+msgstr ""
+"Erzeugt Rauschen nur im Lumineszenz-Kanal (YCbCr). Dies reduziert die "
+"Verarbeitungszeit."
+
+#: ../src/messages.h:29
+msgid ""
+"Converts from sRGB colour space to linear RGB before applying the noise, "
+"then back again. This is more physical and increases the noise in dark "
+"regions."
+msgstr ""
+"Konvertiert vom sRGB Farbraum zu linearem RGB vor dem Hinzufügen des "
+"Rauschens und dann zurück. Dies ist physikalischer und erhöht das Rauschen "
+"in dunklen Regionen."
+
+#: ../src/messages.h:30
+msgid "Resets to the default values."
+msgstr "Setzt zu den Standardwerten zurück."
+
+#. TRANSLATORS: %.2f must remain unchanged. Maximum length of entire
+#. string is 50 chars.
+#: ../src/events.c:85 ../src/events.c:99
+#, c-format
+msgid "Standard deviation: %.2f"
+msgstr "Standardabweichung: %.2f"
+
+#. TRANSLATORS: standard deviation (mathematical term)
+#: ../src/gauss_gui.c:22
+msgid "Stdev"
+msgstr "Stdabw"
+
+#. prepeare the dialog
+#: ../src/interface.c:20 ../src/interface.c:141
+msgid "Noise generator"
+msgstr "Rausch-Generator"
+
+#. TRANSLATORS: this is the surname of the French mathematician
+#. Simeon-Denis Poisson
+#: ../src/interface.c:44
+msgid "Poisson"
+msgstr "Poisson"
+
+#. TRANSLATORS: this is the surname of the German mathematician
+#. Carl-Friedrich Gauss
+#: ../src/interface.c:48
+msgid "Gauss"
+msgstr "Gauss"
+
+#. TRANSLATORS: Uniform as in uniform distribution.
+#: ../src/interface.c:51
+msgid "Uniform"
+msgstr "Gleichverteilt"
+
+#. TRANSLATORS: this is the surname of the French mathematician
+#. Pierre-Simon Laplace
+#: ../src/interface.c:55
+msgid "Laplace"
+msgstr "Laplace"
+
+#. TRANSLATORS: this is the surname of the Dutch physicist Hendrik Lorentz
+#: ../src/interface.c:58
+msgid "Lorentz"
+msgstr "Lorentz"
+
+#: ../src/interface.c:83
+msgid "Luminance noise only"
+msgstr "Nur Lumineszenz-Rauschen"
+
+#. gamma toggle
+#: ../src/interface.c:100
+msgid "Gamma correction"
+msgstr "Gamma Korrektur"
+
+#. TRANSLATORS: this is the scale parameter of the Laplace distribution
+#: ../src/laplace_gui.c:32
+msgid "Scale"
+msgstr "Skala"
+
+#. TRANSLATORS: parameter of the Cauchy-Lorentz distribution
+#. (Greek letter)
+#: ../src/lorentz_gui.c:23
+msgid "Gamma"
+msgstr "Gamma"
+
+#: ../src/noise.c:116
+msgid "Generating noise..."
+msgstr "Generiere Rauschen..."
+
+#: ../src/plugin.c:32
+msgid "Generates various types of noise."
+msgstr "Generiert verschiedene Typen von Rauschen."
+
+#: ../src/plugin.c:37
+msgid "_Noise generator..."
+msgstr "_Rausch-Generator..."
+
+#: ../src/poisson_gui.c:22
+msgid "Photons"
+msgstr "Photonen"
+
+#. approximation toggle
+#: ../src/poisson_gui.c:52
+msgid "Approximate"
+msgstr "Approximation"
+
+#: ../src/uniform_gui.c:31
+msgid "Width"
+msgstr "Breite"

@@ -1,0 +1,15 @@
+ChangeLog
+=========
+
+noise-generator-0.2.5
+-------------------------------------------------------------------------------
+- Added standard deviation label wherever possible.
+- Changed maximum width of uniform noise distribution.
+- Added Laplace noise.
+- Added Lorentz noise.
+- New translation: Polish
+- Updated German translation.
+
+noise-generator-0.2-beta
+-------------------------------------------------------------------------------
+- First release.

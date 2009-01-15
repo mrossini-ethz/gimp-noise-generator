@@ -1,0 +1,25 @@
+README
+======
+
+The noise generator GIMP plugin adds noise to an image. The noise can be of
+various types, even combined. There is an option to apply a gamma correction on
+the original image before the application of noise as well as an option to
+produce luminance noise only.
+
+Supported noise types are:
+- Poisson noise
+- Gaussian noise
+- Uniform noise
+- Laplace noise
+- Lorentz noise
+
+LICENCE
+-------
+
+Copyright (C) 2008 by Marco Rossini. Distributed under the General Public
+License GPLv2+. See the file COPYING which contains the license.
+
+INSTALLATION
+------------
+
+See the file INSTALL for instructions how to install the plugin.
