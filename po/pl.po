@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: noise-generator 0.1b-exp\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-12-27 15:47+0100\n"
-"PO-Revision-Date: 2008-12-27 16:18+0100\n"
+"PO-Revision-Date: 2008-12-28 11:45+0100\n"
 "Last-Translator: Michał Prędotka <mpredotka@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgstr "Odchylenie standardowe rozkładu Laplace'a."
 
 #: ../src/messages.h:26
 msgid "The Lorentz distribution describes resonances and is a (so called) fat-tail distribution, because away from the resonance it goes to zero very slowly. It does not have either mean value nor standard deviation. Lorentz noise produces salt-and-pepper noise."
-msgstr "Rozkład Lorentza opisuje rezonans i należy do rozkładów z tzw. grubym ogonem. Nie posiada ani wartości średniej ani odchylenia standardowego. Szum Lorentza to szum szum typu \"sól i pieprz\"."
+msgstr "Rozkład Lorentza opisuje rezonans i należy do rozkładów z tzw. grubym ogonem. Nie posiada ani wartości średniej ani odchylenia standardowego. Szum Lorentza to szum typu \"sól i pieprz\"."
 
 #: ../src/messages.h:27
 msgid "Determines the scale parameter of the Lorentz distribution which is the half width half maximum (HWHM) of the distribution."
