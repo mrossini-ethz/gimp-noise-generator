@@ -1,0 +1,4 @@
+po/*.mo
+po/noise-generator.pot
+src/*.o
+src/noise-generator
