@@ -1,5 +1,5 @@
 CFLAGS = -O3 -Wall $(shell gimptool-2.0 --cflags)
-LIBS = $(shell gimptool-2.0 --libs)
+LIBS = $(shell gimptool-2.0 --libs) -lm
 PLUGIN = noise-generator
 SOURCES = plugin.c noise.c events.c interface.c colour.c poisson_gui.c gauss_gui.c uniform_gui.c laplace_gui.c lorentz_gui.c
 HEADERS = plugin.h interface.h messages.h
@@ -17,7 +17,7 @@ $(PLUGIN): $(OBJECTS)
 
 %.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) -c -o $@ $*.c
-	
+
 install: $(PLUGIN)
 	@gimptool-2.0 --install-admin-bin $^
 
